@@ -18,7 +18,7 @@ while True:
     playing = str.casefold(input("(yes/no) "))
     if playing == "no":
         quit()
-    if playing == "yes":
+    elif playing == "yes":
         while True:
             print("Basic Arithmetic Game")
             print("1. Add")
@@ -52,7 +52,7 @@ while True:
                         difan = input("Enter the difference of the two numbers or Enter E to exit: ")
                         if difan in ("E", "e"):
                             break
-                        if difan == dif:
+                        elif difan == dif:
                             print("Correct!")
                             score += 1
                         else:
@@ -68,7 +68,7 @@ while True:
                         proan = input("Enter the product of the two numbers or Enter E to exit: ")
                         if proan in ("E", "e"):
                             break
-                        if proan == pro:
+                        elif proan == pro:
                             print("Correct!")
                             score += 1
                         else:
@@ -82,7 +82,7 @@ while True:
                         quoan = input("Enter the Quotient of the two numbers or Enter E to exit: ")
                         if quoan in ("E", "e"):
                             break
-                        if quoan == quo:
+                        elif quoan == quo:
                             print("Correct!")
                             score += 1
                         else:
@@ -93,7 +93,7 @@ while True:
                     elif play == "5":
                         print("Congratulations ", name, "your final score is ", str(score))
                         quit()
-                    else:
+            else:
                         print("Please choose among the four game types or enter 5 to quit game")
     else:
         print("Please answer properly!")
